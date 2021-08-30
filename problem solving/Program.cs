@@ -10,8 +10,8 @@ namespace problem_solving
     {
         static void Main(string[] args)
         {
-            removeduplicate("pakkisstaan");
-            Countcharacter("pakkisstaan");
+            removeduplicate("paaaakkisstaan");
+            Countcharacter("paaakkisstaan");
             Console.ReadLine();
 
 
@@ -22,10 +22,20 @@ namespace problem_solving
 
             for (int i = 0; i < str.Length; i++)
             {
-                if (!result.Contains(str[i]))
+                int j = 0;
+                if(i != 0)
+                {
+                    j = i - 1;
+                }
+                
+                string storetempvariable = str[j].ToString();
+
+                if(storetempvariable != str[i].ToString())
                 {
                     result += str[i];
                 }
+                    
+                
             }
             Console.WriteLine(result);
             

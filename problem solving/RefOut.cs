@@ -7,8 +7,11 @@
 //    public static void Main()
 //    {
 //        int i = 1;
+//        int j = 1;
 //        Console.WriteLine("Previous value of integer i:" + i.ToString());
 //        string test = GetNextName(i);
+//        string test1 = GetNextName(ref i);
+//        Console.WriteLine("Current value of integer i:" + i.ToString());
 //        Console.WriteLine("Current value of integer i:" + i.ToString());
 //        Console.ReadLine();
 //    }
